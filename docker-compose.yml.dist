@@ -1,0 +1,19 @@
+app:
+  build: .
+  volumes:
+      - /opt/daybook/app_data:/opt/daybook/app_data
+  ports:
+    - "8080:8080"
+  links:
+    - db
+
+db:
+  image: sameersbn/mysql
+  volumes:
+    - /opt/daybook/mysql_data:/var/lib/mysql
+  ports:
+    - "3307:3306"
+  environment:
+    - DB_NAME=database_name
+    - DB_USER=database_user
+    - DB_PASS=database_password
