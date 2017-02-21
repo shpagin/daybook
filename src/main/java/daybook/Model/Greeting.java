@@ -1,4 +1,4 @@
-package hello;
+package daybook.Model;
 
 public class Greeting {
 

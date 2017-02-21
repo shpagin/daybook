@@ -1,3 +1,9 @@
 .idea
 .gradle
 build
+caches
+daemon
+native
+wrapper
+docker-compose.yml
+src/main/resources/application.properties
