@@ -14,7 +14,7 @@ apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'daybook'
-    version = '0.1.1'
+    version = '0.1.2'
 }
 
 repositories {
@@ -32,6 +32,9 @@ dependencies {
 
     // Use MySQL Connector-J
     compile 'mysql:mysql-connector-java'
+
+//    compile 'org.springframework.security:spring-security-web'
+//    compile 'org.springframework.security:spring-security-config'
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
